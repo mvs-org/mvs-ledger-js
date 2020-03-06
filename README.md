@@ -21,7 +21,7 @@ npm install mvs-ledger
 ``` javascript
 const {HIDDevice} = require('mvs-ledger/lib/device/hid')
 ```
-<a href="https://nodei.co/npm/metaversejs/"><img src="https://nodei.co/npm/metaversejs.png?downloads=true&downloadRank=true&stars=true"></a>
+<a href="https://nodei.co/npm/mvs-ledger/"><img src="https://nodei.co/npm/mvs-ledger.png?downloads=true&downloadRank=true&stars=true"></a>
 ### Browser
 For use in webapps the npm package contains a dist/bundle.browser.js. You can see an example for WebUSB in the examples folder. You can generate builds using webpack by running the following command
 ``` bash
