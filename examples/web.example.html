@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="/dist/bundle.browser.js"></script>
+</head>
+
+<body>
+    <div id="error" style="color: red"></div>
+    <div id="result"></div>
+    <label for="path">Path</label>
+    <input type="text" id="path" value="23'/1337'/0">
+    <button onclick="loadKey(document.getElementById('path').value)">Load Public Key</button>
+    <script>
+        function loadKey(path) {
+            MvsLedger.WebUSBDevice.getDevice()
+                .then(device => device.getWalletPublicKey(path))
+                .then(key => {
+                    console.log({path, key})
+                    const el = document.createElement('div')
+                    el.appendChild(document.createTextNode(`key: ${key.publicKey} address: ${key.address} chaincode: ${key.chainCode}`))
+                    document.getElementById('result').appendChild(el)
+                    document.getElementById('error').textContent = ''
+                })
+                .catch(error => {
+                    document.getElementById('error').textContent = error.message
+                })
+        }
+    </script>
+</body>
+
+</html>
