@@ -6,6 +6,13 @@
   "directories": {
     "lib": "lib"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvs-org/mvs-ledger-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvs-org/mvs-ledger-js/issues"
+  },
   "scripts": {
     "test": "echo 1",
     "deploy": "npm publish",
