@@ -12,7 +12,6 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    repo: mvs-ledger
     tag: latest
   api_key:
     secure: q82cNwQe7R64U8iJwxlqyCvDSnRrTAjrpHA/zTEHBd3HRkZUBj4RAUJ8u4HNeKTpbnHaC4et2GEY+07RiAPQSxpkRDBNobIPA08QZ///6OAYugyZANriv7FQ3niB2pEuAukTgzdlxVTd5ZcC69EJGsS/TpezPsPeskK2nvmp2tyNpXxTNCbK8hNgY3Nskl7o0hX66PPHyi7qQ2N/8eY+UboffK4klKmpexnHxxazu9hp9zPAZSj8HImUyDVWRouyP9OONtqDCePg/e7TpjZKguLJ9sShzEpE42NVM6Z5jmt9Xu8tTH5LUVTnC1LUIO9RuaF8sg9crhFuf4ewUneWuxk6Mgeh/W9dwo+DsckuYCT94lINqViYAvV6BcTlQG5vULRYvsXv/V6STD6vMqufuXabe0X/ueGKBnfGAtLSaMvl/0K6HR2Kg9do+DFH1bSQzBo29s4N5HBEvdjkzWS0Se9zDsiuwZL5EEj/x7pAkzQsiialTrrEbH1i1Rf5eLjfF4WTVHPg1SuihgKzWBlLn+zGxCme4ILcs+HrqhfP/+M6fD+sxfMBIjRqaZSTWs2ffa/CF+216/OVQMFCOCEi8Ivb9PHi2m+olY0OtGgHgAzco8Y458qyizjNGQh6FAtr1sDs1403scv/vjR3WGt9OL9zE9nOnOJ9bg65N3H7q9A=
