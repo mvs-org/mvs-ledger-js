@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '10'
+cache:
+  directories:
+  - node_modules
+before_deploy:
+- npm run build
+deploy:
+  provider: npm
+  email: canguruhh@mutzl.org
+  skip_cleanup: true
+  on:
+    branch: master
+    repo: canguruhh/mvs-ledger
+    tag: latest
+  api_key:
+    secure: bDNlllGY9xwXGcu/RFcFim76tkSBayYU+LVLb9rts441OPPliVzkyNacR5p3vw3xEXjSAqn0fOn/vdyJDokxiAFkvKJc1LBMWJtM3S5hiBWcdD8mHyOcw+d+cQO8npUXU4zdDqb2hfdIx9muHebKzNiXsKxCBYzsiYrIjn0qKjfZbjHrQiDlXjb0ii1uBEED2siZoj/A1qXjQsLSQLFW/k5qsZUux3khI9zmY3wK9jnKhiI4nuGXKvDNs7h28KHfV1g4Ox3dR44ULXQOFJy+yb2UWB0beNrXIUkmNoKt71AX6cYw6oWLlPnvbFBtzp/W6xYe5xxpLOF0Dh3oPhBMBfv2lVv7ZEOou+nd2Hs1nHnAw6Sxe/kgwaPM11G0Q4d09vQWdhRIuITrdHNKleh4la2KK1UcgLMEdgC5OUJGNCRSkJiHywCDAN2YGlWM2Vup42IQSYLlOtHSb/F/qbkyUtNIAvrdD2drJ/7gQFVXvTNWpZjhIwGqQwq1f/9o2FR3N+Zg8eMGq2Sn87k27fItlFg8KloTbV3OOI5dnsa98vQtzbDW2WuZINBGP+53oDSoGwnlvn6RgOTtfFX19w8M56UChX1LLHKf3unfN0WQNMSpXw0FhBUj4k9QQkUAW+rKoGoyhrBnRZ+FQGopdTA9b+n96bJz9qPwvKwO5aVn5/g=

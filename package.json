@@ -1,6 +1,6 @@
 {
   "name": "mvs-ledger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Metaverse library for ledger hardware wallet support",
   "main": "lib/index",
   "directories": {

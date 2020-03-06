@@ -32,9 +32,9 @@ npm run build
 
 Please also check the examples folder.
 
-### Public Key
+### Get Public Key
 ``` javascript
-const {HIDDevice} = require('mvs-ledger/lib/device/hid')
+const {HIDDevice} = require('mvs-ledger')
 
 const path = "1337'/0/0"
 
@@ -42,7 +42,6 @@ HIDDevice.getDevice()
     .then(device=>device.getWalletPublicKey(path))
     .then(console.log)
 ```
-
 ## Licence
 
 MIT License
